@@ -5,7 +5,7 @@
 echo " Instalando ---> Docker....";
 
 # isntalar dnf plugins
-dnf -y install dnf-plugins-core;
+dnf -yq install  dnf-plugins-core;
 
 
 # Adicinar repositorio 
@@ -14,9 +14,9 @@ dnf config-manager \
     https://download.docker.com/linux/fedora/docker-ce.repo;
 
 # Instalando Docker
-dnf install docker-ce docker-ce-cli containerd.io;
+dnf install -q docker-ce docker-ce-cli containerd.io;
 
 # Instalando Compose
-dnf install docker-compose;
+dnf install -q docker-compose;
 
 

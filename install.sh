@@ -1,25 +1,14 @@
-# ****** Instalação de programas basicos para fedora 
-# ****** Autor: Felipe M A B Huinka
-# ****** Data : 09/10/2021
-# ***** Versão: Beta 1.0
-#!/bin/bash
-#
+#!/bin/sh
 
 echo "
-#### INCIANDO INSTALAÇAO DE RECURSOS
-#### Caregando a instalação dos programas
+	########## INSTALAÇÂO FEDORA RECURSOS
+	#### Autor: Felipe M A B Hunka
+	### Versao: 0.02 beta
 ";
+ 
 
-# Chama Instalação do Chrome
-source /sh/chrome.sh;
+source ./chrome.sh; # instalando Google-Chrome
 
-# Chama Instalação do VS Code
-source /sh/vscode.sh;
+source ./vscode.sh; # Instalando Visual-Studio-Code
 
-# Chama Instalação do Docker
-source /sh/docker.sh;
-
-
-
-#liberar repositorios de outras fontes
-
+source ./docker.sh; # Instalando Docker
