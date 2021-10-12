@@ -23,5 +23,6 @@ echo "------------------- DIRETORIO CLONADO PARA /"$PASTA"/magento2 ------------
 echo " -- > Aplicando Permissoes COMPOSES ...";
         sudo chmod 777 /$PASTA/magento2/docker-compose.dev.yml
         sudo chmod 777 /$PASTA/magento2/src/composer.json
+        sudo chmod 777 /$PASTA/magento2/src/auth.json.sample
 
 echo " ------------------- FIM FAZER ALTERAÇÕES ADEQUADAS  /"$PASTA"/magento2";
