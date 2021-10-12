@@ -18,10 +18,10 @@ echo "
 ";
         sudo git clone --recurse-submodule https://github.com/magenteiro/firestore.git /"$PASTA"/magento2
 
-echo "-------------------  ".$(PWD)."DIRETORIO CLONADO PARA /"$PASTA"/magento2 -------------------------";
+echo "------------------- DIRETORIO CLONADO PARA /"$PASTA"/magento2 -------------------------";
 
 echo " -- > Aplicando Permissoes COMPOSES ...";
-        sudo chmod 777 /$PASTA/magento2/docker-compose-dev.yml
+        sudo chmod 777 /$PASTA/magento2/docker-compose.dev.yml
         sudo chmod 777 /$PASTA/magento2/src/composer.json
 
 echo " ------------------- FIM FAZER ALTERAÇÕES ADEQUADAS  /"$PASTA"/magento2";
