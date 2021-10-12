@@ -5,33 +5,33 @@
 echo " Instalando ---> Docker....";
 
 # isntalar dnf plugins
-dnf -yq install  dnf-plugins-core;
+sudo dnf -yq install  dnf-plugins-core;
 
 
 # Adicinar repositorio 
-dnf config-manager \
+sudo dnf config-manager \
     --add-repo \
     https://download.docker.com/linux/fedora/docker-ce.repo;
     
 # Abilita Nightly
-dnf config-manager --set-enabled docker-ce-nightly
+sudo dnf config-manager --set-enabled docker-ce-nightly
 
 # Abilita Test
-dnf config-manager --set-enabled docker-ce-test
+sudo dnf config-manager --set-enabled docker-ce-test
     
 
 # Instalando Docker
-dnf install -q docker-ce docker-ce-cli containerd.io;
+sudo dnf install -q docker-ce docker-ce-cli containerd.io;
 
 # Instalando Compose
-dnf install -q docker-compose;
+sudo dnf install -q docker-compose;
 
-groupadd docker
+sudo groupadd docker
 
-usermod -aG docker $USER
+sudo usermod -aG docker $USER
 
-chown "$USER":"$USER" /home/"$USER"/.docker -R
-chmod g+rwx "$HOME/.docker" -R
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
 
 
 
