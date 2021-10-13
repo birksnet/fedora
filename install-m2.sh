@@ -2,6 +2,7 @@
 
 ###### Script para clonar FIRESTORE magenteiro
 ###### ANTES DE USAR ESSE ARQUIVO DE PERMISSAO ( sudo chmod a+x /install-m2.sh )
+sudo chmod +x ./install-m2.sh
 
 echo "############## Instalando Magento FireStore ####################";
 
