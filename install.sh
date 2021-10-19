@@ -7,8 +7,10 @@ echo "
 ";
  
 
-source ./chrome.sh; # instalando Google-Chrome
+source ./chrome.sh;	# instalando Google-Chrome
 
-source ./vscode.sh; # Instalando Visual-Studio-Code
+source ./vscode.sh; 	# Instalando Visual-Studio-Code
 
-source ./docker.sh; # Instalando Docker
+source ./docker.sh; 	# Instalando Docker
+
+source ./snap.sh;	# Instalando SNAP e prograns
